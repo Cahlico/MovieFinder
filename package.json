@@ -1,0 +1,25 @@
+{
+  "name": "Projeto-6-movie-finder",
+  "version": "1.0.0",
+  "description": "Seu primeiro projeto usando JavaScript Moderno será um site que te ajuda a descobrir novos filmes!",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cahlico/projeto-06-movie-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cahlico/projeto-06-movie-finder/issues"
+  },
+  "homepage": "https://github.com/Cahlico/projeto-06-movie-finder#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
