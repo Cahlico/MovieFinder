@@ -1,11 +1,39 @@
-main {
+section {
     display: flex;
     flex-wrap: wrap;
     margin: 50px 110px 20px 110px;
 }
 
-main img {
+section img {
     height: 300px;
     margin: 0 auto;
     margin-top: 30px;
+    cursor: pointer;
+}
+
+article {
+    display: flex;
+    margin: 50px 110px 20px 110px;
+    color: #FFF;
+}
+
+article span {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+article p {
+    padding: 20px;
+}
+
+article h1 {
+    color: #c9c732;
+}
+
+article h2 {
+    padding: 10px;
+    border: 2px solid rgb(167, 167, 167);
+    border-radius: 10px;
 }

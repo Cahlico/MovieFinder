@@ -1,7 +1,7 @@
-import sendRequestPopular from "./popular.js"
-import sendRequestNowPlaying from "./now_playing"
-import sendRequestTopRated from "./top_rated"
-import sendRequestUpcoming from "./upcoming"
+import sendRequestPopular from "./popular.js";
+import sendRequestNowPlaying from "./now_playing";
+import sendRequestTopRated from "./top_rated";
+import sendRequestUpcoming from "./upcoming";
 
 var chosenBefore = document.querySelector("button:first-child");
 
@@ -11,13 +11,13 @@ addEventOnNavigator();
 function addEventOnNavigator() {
     
     var button = document.querySelectorAll("button");
-    button.forEach((element) => element.addEventListener("click", setCategory));
+    button.forEach(element => element.addEventListener("click", setCategory));
 }
 
 function setCategory() {
 
-    event.target.setAttribute("class", "chosen");
     chosenBefore.removeAttribute("class");
+    event.target.setAttribute("class", "chosen");
 
     chosenBefore = event.target;
     setPage(event.target);
@@ -25,7 +25,7 @@ function setCategory() {
 
 function setPage(target) {
 
-    var erase = document.querySelector("main");
+    var erase = document.querySelector("section");
     erase.remove();
 
     var page = target.innerText;
