@@ -18,11 +18,12 @@ header img {
 }
 
 nav {
-    width: 26%;
+    width: 26.1%;
     height: 33px;
     margin: 0 auto;
     border: 1px solid rgb(126, 126, 126);
     border-radius: 5px;
+    overflow: hidden;
 }
 
 nav button {
@@ -32,7 +33,12 @@ nav button {
     border: none;
     border-right: 1px solid rgb(126, 126, 126);
     outline-style: none;
+    margin-left: -4px;
     padding: 8px 5px;
+}
+
+nav button:first-child {
+    margin: 0;
 }
 
 .chosen {
@@ -42,5 +48,5 @@ nav button {
 
 nav button:last-child {
     border: none;
-    padding-right: 0;
+    padding-right: 20.5px;
 }

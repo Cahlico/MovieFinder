@@ -37,3 +37,25 @@ article h2 {
     border: 2px solid rgb(167, 167, 167);
     border-radius: 10px;
 }
+
+article ion-icon {
+    position: absolute;
+    font-size: 50px;
+}
+
+article ion-icon:first-child {
+    color: #ebda23;
+    top: 20px;
+    left: 110px;
+}
+
+article ion-icon:nth-child(2) {
+    transition: 1s all;
+    color: rgba(255, 255, 255, .7);
+    top: 82%;
+    left: 27%;
+}
+
+.clicked {
+    color: rgba(247, 47, 47, 0.7);
+}

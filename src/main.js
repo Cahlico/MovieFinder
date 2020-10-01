@@ -31,10 +31,8 @@ function setPage(target) {
     var page = target.innerText;
 
     if(page === "Populares") {
-
         sendRequestPopular();
     } else if (page === "Nos cinemas") {
-
         sendRequestNowPlaying();
     } else if (page === "Maiores notas") {
         sendRequestTopRated();
