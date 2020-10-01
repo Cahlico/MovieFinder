@@ -18,7 +18,8 @@ header img {
 }
 
 nav {
-    width: 27%;
+    width: 26%;
+    height: 33px;
     margin: 0 auto;
     border: 1px solid rgb(126, 126, 126);
     border-radius: 5px;
@@ -31,15 +32,15 @@ nav button {
     border: none;
     border-right: 1px solid rgb(126, 126, 126);
     outline-style: none;
-    margin: 0;
-    padding: 5px 7px;
+    padding: 8px 5px;
 }
 
 .chosen {
-    background-color: #32a852;  
+    background-color: #32a852;
 }
 
 
 nav button:last-child {
     border: none;
+    padding-right: 0;
 }
