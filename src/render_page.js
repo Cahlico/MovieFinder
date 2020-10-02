@@ -2,7 +2,8 @@ import setPage from "./main";
 
 const key = "921ca98e7932d5a487ee256da6405b38";
 var data;
-var selectedAsFavorite = [];
+var selectedAsFavorite = JSON.parse(localStorage.selectedAsFavorite) || [];
+saveFavorites();
 var movieId;
 var genres;
 
@@ -23,6 +24,7 @@ function renderPage() {
 
         var i = 0;
         var isFavorite;
+
         do {
             if(selectedAsFavorite[i] == element.id) {
                 isFavorite = '<ion-icon name="heart"></ion-icon></span>';
@@ -30,7 +32,7 @@ function renderPage() {
             } else {
                 isFavorite = '</span>';
             }
-            
+
             i++;
         } while (i < selectedAsFavorite.length);
 
@@ -177,6 +179,7 @@ function addFavorite(favorite) {
     if(clicked === "clicked") {
 
         selectedAsFavorite.push(movieId);
+        saveFavorites();
     } else {
 
         selectedAsFavorite = selectedAsFavorite.filter(element => {
@@ -187,5 +190,11 @@ function addFavorite(favorite) {
 
             return true;
         });
+        saveFavorites();
     }
+}
+
+function saveFavorites() {
+
+    localStorage.selectedAsFavorite = JSON.stringify(selectedAsFavorite);
 }

@@ -32,6 +32,7 @@ export default function setPage(target) {
     var page = (target) ? target.innerText : lastPage;
     lastPage = page;
 
+    //os request sao feitos nas trocas de paginas pelo pouco volume de dados
     if(page === "Populares") {
         sendRequestPopular();
     } else if (page === "Nos cinemas") {
