@@ -4,6 +4,7 @@ import sendRequestTopRated from "./top_rated";
 import sendRequestUpcoming from "./upcoming";
 
 var chosenBefore = document.querySelector("button:first-child");
+var lastPage = "Populares";
 
 sendRequestPopular();
 addEventOnNavigator();
@@ -23,12 +24,13 @@ function setCategory() {
     setPage(event.target);
 }
 
-function setPage(target) {
+export default function setPage(target) {
 
-    var erase = document.querySelector("section");
-    erase.remove();
+    var atualPage = document.querySelector("section");
+    atualPage.remove();
 
-    var page = target.innerText;
+    var page = (target) ? target.innerText : lastPage;
+    lastPage = page;
 
     if(page === "Populares") {
         sendRequestPopular();
