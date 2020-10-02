@@ -21,17 +21,24 @@ function renderPage() {
 
     data.forEach(element => {
 
+        var i = 0;
         var isFavorite;
-        for(var i = 0; i < selectedAsFavorite.length; i++) {
-            isFavorite = (selectedAsFavorite[i] == element.id) ? '<ion-icon name="heart"></ion-icon></span>' : '</span>';
-        }
+        do {
+            if(selectedAsFavorite[i] == element.id) {
+                isFavorite = '<ion-icon name="heart"></ion-icon></span>';
+                break;
+            } else {
+                isFavorite = '</span>';
+            }
+            
+            i++;
+        } while (i < selectedAsFavorite.length);
 
         container.innerHTML += `
         <span>
             <img id="${element.id}" src="https://image.tmdb.org/t/p/w200${element.poster_path}" 
             alt="${element.title}">
             ${isFavorite}
-        </span>
         `;
     });
 
