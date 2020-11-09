@@ -1,7 +1,7 @@
-## Parrot Card Game
+## Movie Finder
 
 <p align="center">
-  <img src='public/images/logo.png' width="200" alt="parrot-card" />
+  <img src='public/images/logo.png' width="200" alt="MovieFinder" />
 </p>
 
 ## Objective
