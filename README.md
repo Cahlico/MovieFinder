@@ -1,91 +1,42 @@
-# Descrição
+## Parrot Card Game
 
-Seu primeiro projeto usando JavaScript Moderno será um site que te ajuda a descobrir novos filmes!
+<p align="center">
+  <img src='public/images/logo.png' width="200" alt="parrot-card" />
+</p>
 
-# Requisitos
+## Objective
+<p>
+   This project was developed throughout the Bootcamp of "Respode Aí", it is single page application to find movies. The user can choose which kind of filter he wants to use.
+</p>
 
-- Geral
-    - [ ]  Não utilize bibliotecas para manipular o HTML (como jquery)
-    - [ ]  Seu projeto deverá ser desenvolvido utilizando Git e GitHub
-    - [ ]  Para isso, comece fazendo um **fork** **privado** deste repositório
-    - [ ]  **A cada requisito implementado** faça um commit com uma mensagem descritiva do que você evoluiu. Caso queira dividir um requisito em vários commits, não há problema. Mas evite colocar mais de um requisito no mesmo commit
-- Layout
-    - [ ]  Aplicar layout para desktop, seguindo imagens fornecidas
-- Modularização
-    - [ ]  Você deverá modularizar seu projeto em, pelo menos, 6 arquivos:
-        - `main.js` ⇒ Responsável pelo comportamento do menu
-        - `popular.js` ⇒ Responsável por renderizar a lista de filmes populares
-        - `now_playing.js` ⇒ Responsável por renderizar a lista de filmes que estão no cinema
-        - `top_rated.js` ⇒ Responsável por renderizar a lista de filmes que tem as maiores notas
-        - `upcoming.js` ⇒ Responsável por renderizar a lista de filmes que serão lançados em breve
-        - `movie.js` ⇒ Responsável por renderizar a tela de um filme em específico
-    - [ ]  Você deve usar `import / export` para acessar as funções de outros arquivos
-    - [ ]  Você deve usar o Webpack para gerar o build final do seu JavaScript
-- Estrutura de pastas
-    - [ ]  Suas pastas devem ser organizadas da seguinte forma
-        - 📁 movie-finder
-            - 📁node_modules
-            - 📁public
-                - 📁images
+### Features
+- [x] Movies List<br>
+- [x] Menu handler<br>
+- [x] Movie opens with deeper information on click<br>
+- [x] Favorite the card<br>
+- [x] Information remains on the page when reloaded<br>
 
-                    Aqui ficam suas imagens como background e logo
+### Tech Stack
+Languages:<br>
+<p align="center">
+    <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
+    <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
+    <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+</p>
 
-                - 📁styles
+### Contributors
+<a href="https://www.respondeai.com.br/">
+<img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/69740567?s=60&v=4" width="100px;"/>
+<br>
+<sub><b>Responde Aí</b></sub>
+</a>
+<br>
+### Author
+---
+<br>
+Carlos Augusto de Lima Coutinho.
+<p>Carlos Medias:</p>
+<a href="https://www.linkedin.com/in/carlos-augusto-18aa88186/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="https://github.com/Cahlico"><img src="https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white" /></a>
 
-                    Aqui ficam seus arquivos CSS
-
-                - 📄 index.html
-
-                    Este é seu arquivo HTML principal
-
-                - 📄 build.js
-
-                    Este é o arquivo JS gerado pelo webpack
-
-            - 📁src
-                - 📄 main.js
-                - 📄 popular.js
-                - 📄 now_playing.js
-                - 📄 top_rated.js
-                - 📄 upcoming.js
-                - 📄 movie.js
-            - 📄 .gitignore
-
-                Arquivo que configura o git para ignorar certas pastas/arquivos
-
-            - 📄 package.json
-
-                Arquivo que guarda as configurações do npm (gerado automaticamente pelo npm!)
-
-            - 📄 package-lock.json
-
-                Arquivo que guarda informações sobre as suas bibliotecas instaladas (gerado automaticamente pelo npm!)
-
-            - 📄 webpack.config.js
-
-                Arquivo para configurar o webpack
-
-- Gerenciamento de Dependências
-    - [ ]  Você deve utilizar o npm para instalar as bibliotecas que possam ser instaladas por ele (ex: axios)
-    - [ ]  Você deve configurar o Git (através do arquivo .gitignore) para não versionar a pasta `node_modules` nem o arquivo `public/build.js`
-- Tela de lista de filmes
-    - [ ]  Ao entrar no site, automaticamente deve-se renderizar a tela de filmes populares
-    - [ ]  Ao navegar pelo menu, devem ser renderizadas cada tela de acordo com o item clicado
-    - [ ]  Para obter a lista de filmes de cada categoria, utilize o serviço **The Movie Database API**
-        - Link da documentação: [https://developers.themoviedb.org/3/getting-started/introduction](https://developers.themoviedb.org/3/getting-started/introduction)
-        - Endpoints para cada categoria:
-            - Populares: [https://api.themoviedb.org/3/movie/popular?api_key=](https://api.themoviedb.org/3/movie/popular?api_key=)API_KEY
-            - No cinema: [https://api.themoviedb.org/3/movie/now_playing?api_key=](https://api.themoviedb.org/3/movie/now_playing?api_key=)API_KEY
-            - Maiores notas: [https://api.themoviedb.org/3/movie/top_rated?api_key=](https://api.themoviedb.org/3/movie/top_rated?api_key=)API_KEY
-            - Em breve: [https://api.themoviedb.org/3/movie/upcoming?api_key=](https://api.themoviedb.org/3/movie/upcoming?api_key=)API_KEY
-        - No lugar de API_KEY você deve colocar uma chave obtida através do cadastro nessa plataforma. Você pode se cadastrar e gerar sua chave (basta seguir o link da documentação ali em cima!).
-
-- Tela de um filme
-    - [ ]  Ao clicar em um filme, deverá ser renderizada a tela do filme clicado. Não é necessário disparar nenhum outro request pro servidor pra obter esses dados, todos eles já vêm nos requests anteriores
-
-# Bônus (opcional)
-
-- [ ]  Adicionar um botão de **Voltar** na tela de um filme para voltar para a tela anterior
-- [ ]  Adicionar as informações de **gênero** do filme na tela do filme (Dica: No objeto que representa um filme tem uma lista de **genre_ids**, com os ids dos gêneros do filme. Explore a API para tentar pegar os nomes desses gêneros.)
-- [ ]  Coloque um botão de "Favoritar" um filme dentro da tela do filme, de forma que quando voltar pra tela de listagem, apareça uma estrela sobre os filmes favoritados
-- [ ]  Experimente persistir essa informação de Favoritos para que ela seja mantida mesmo que o usuário feche e re-abra seu site (Dica: pesquise por LocalStorage; Dica 2: Para usar Local Storage, antes pesquise pela extensão Live Server do VS Code, você precisará estar rodando o projeto por ela para usar o Local Storage).
+Made by, Get in Touch!<br><br>
